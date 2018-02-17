@@ -6,4 +6,8 @@ import javacardx.crypto.*;
 
 public class CryptoCardApplet extends Applet implements ISO7816 {
 
+    @Override
+    public void process(APDU apdu) throws ISOException {
+
+    }
 }

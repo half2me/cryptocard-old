@@ -4,12 +4,15 @@ version '0.0.1'
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'com.klinec', name: 'jcardsim', version: '3.0.4', transitive: false
+    compile files(System.getenv('JC_HOME') + '/lib/api.jar')
+
+    testCompile "junit:junit:4.12"
+    testCompile "com.klinec:jcardsim:3.0.4"
 }
