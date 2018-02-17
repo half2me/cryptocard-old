@@ -8,3 +8,4 @@ for example if installed with brew, set gradle's home to `/usr/local/opt/gradle/
 ### Running
 
 ### Using the docker image
+`docker run -it -v $(pwd):/home/gradle halftome/cryptocard gradle build`
